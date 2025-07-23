@@ -1,5 +1,5 @@
 
-# 🚀 Ujjval's Portfolio
+# 🚀 Amarjeet Portfolio
 
 Welcome to my personal portfolio! This project showcases my skills, experience, and projects as a MERN stack developer.
 
