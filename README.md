@@ -36,8 +36,7 @@ Portfolio/
 ## 🚀 Getting Started
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/ujjvalap/Portfolio_Ujjval.git
-cd Portfolio_Ujjval
+git clone https://github.com/amarjeetvr/portfolio.git
 ```
 
 ### 2️⃣ Install Dependencies
@@ -58,9 +57,9 @@ git push origin main
 ```
 
 ## 📧 Contact
-📩 **Email:** ujjvalpateliya@gmail.com  
-🔗 **LinkedIn:** [linkedin.com/in/ujjval](https://linkedin.com/in/ujjval-pateliya-qwer2005)  
-🐙 **GitHub:** [github.com/ujjvalap](https://github.com/ujjvalap)
+📩 **Email:** av457508@gmail.com  
+🔗 **LinkedIn:** https://www.linkedin.com/in/amarjeet-verma-3725a4288/
+🐙 **GitHub:** https://github.com/amarjeetvr
 
 ---
-✨ Designed & Developed by **Ujjval**
+✨ Designed & Developed by **Amarjeet**
