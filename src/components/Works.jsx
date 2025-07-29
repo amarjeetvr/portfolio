@@ -28,12 +28,12 @@ const ProjectCard = ({
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <div className="relative w-full h-[230px]">
+        <div className="relative w-full h-[200px] sm:h-[220px] md:h-[250px] flex items-center justify-center">
           <img
-            src={image}
-            alt="project_image"
-            className="w-full h-full object-cover rounded-2xl"
-          />
+              src={image}
+    alt="project_image"
+    className="h-full w-auto object-contain rounded-2xl"
+      />
 
           <div className="absolute inset-0 flex gap-2 justify-end m-3 card-img_hover">
             <div
@@ -91,7 +91,7 @@ const Works = () => {
         <h2
           className={`${styles.sectionHeadText} animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black`}
         >
-          Projects.
+          Projects
         </h2>
       {/* </motion.div> */}
 

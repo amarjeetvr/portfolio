@@ -18,20 +18,16 @@ const Footer = () => {
           }}
           className="mb-4 sm:mb-0"
         >
-          <img
-            src={LOGO2}
-            alt="logo"
-            className="w-24 h-24 sm:w-28 sm:h-28 object-contain"
-          />
+         
         </Link>
         <p className="text-secondary text-[17px] leading-[30px] text-center select-none sm:ml-4">
-          {new Date().getFullYear()} &copy; Created Ujjval Pateliya. All rights
+          {new Date().getFullYear()} &copy; Created Amarjeet Verma. All rights
           reserved.
         </p>
       </div>
       <div className="w-full h-auto flex justify-center text-purple-500 font-bold self-start text-2xl mt-4 sm:mt-6">
         <Typewriter
-          text={["Thank's for visiting!", "Download my resume!", "<Love to Code/>"]}
+          text={["Thank's for visiting!", "Download my resume!", "Love to Code"]}
           loop
           speed={80}
           cursor={false}

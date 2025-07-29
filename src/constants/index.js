@@ -1,3 +1,13 @@
+import devops from "../assets//devops.png";
+import wyreflow from "../assets/wyreflow.jpg";
+import n8n from"../assets/n8n.png";
+import linux from "../assets/linux.png";
+import crtd from "../assets/crtd tech.png";
+import farmer from "../assets/farmer.jpg";
+import jobhunt from "../assets/jobhunt.png";
+import crtdhome from "../assets/crtdHome.png";
+import Jobs from "../assets/Freshers-Jobs-Launch-Your-Tech-Section-Desktop.png";
+
 import {
   mobile,
   backend,
@@ -5,6 +15,7 @@ import {
   web,
   javascript,
   html,
+ 
   css,
   c,
   cpp,
@@ -55,8 +66,8 @@ import {
   gfg,
   leetcode,
   clg,
-  mp
-  
+  mp,
+ 
 
 
 } from "../assets";
@@ -66,7 +77,7 @@ const educations = [
     branch:
       "Computer Science & Engineering",
     marks:
-      "CGPA : 7.0 / 10",
+      "CGPA : 6.30 / 10",
     name: "Sagar Institute Of Science Technology & Engineering Bhopal ",
     year: "(2022 - 2026)",
     image: clg,
@@ -76,7 +87,7 @@ const educations = [
       "12th Grade",
     branch : "Science",
     marks:
-      "Percentage : 66.00 %",
+      "Percentage : 65.00 %",
     name: "Government Higher Secondary School Chhindwara",
     year: "2022",
     image: mp,
@@ -86,7 +97,7 @@ const educations = [
       "10th Grade",
     branch: "SSC",
     marks:
-      "Percentage : 67.20 %",
+      "Percentage : 86.50 %",
     name: "Government High School Chhindwara",
     year: "2020",
     image: mp,
@@ -95,24 +106,20 @@ const educations = [
 
 const profiles = [
   {
-    name: "Geeks for Geek",
+    name: "Github",
+    icon: github,
+    link: "https://github.com/amarjeetvr",
+  },
+  {
+    name: "n8n Ai Agent",
+    icon: n8n,
+    link: "https://n8n.io/",
+  },
+ 
+  {
+    name: "Geeks for Geeks",
     icon: gfg,
-    link: "https://www.geeksforgeeks.org/user/ujjvalap",
-  },
-  {
-    name: "Codlio",
-    icon: codolio,
-    link: "https://codolio.com/profile/Ujjval",
-  },
-  {
-    name: "Leetcode",
-    icon: leetcode,
-    link: "https://leetcode.com/u/ujjvalpateliya",
-  },
-  {
-    name: "Coding Ninjas",
-    icon: coding,
-    link: "https://www.naukri.com/code360/profile/ujjvalpateliya",
+    link: "https://www.geeksforgeeks.org/user/av457q6o4/",
   },
  
   
@@ -134,10 +141,11 @@ export const navLinks = [
 ];
 
 const services = [
-  {
-    title: "Software Tester",
-    icon: web,
-  },
+ {
+  title: "DevOps Engineer",
+  icon: devops,
+},
+
   {
     title: "Frontend Developer",
     icon: mobile,
@@ -153,6 +161,7 @@ const services = [
 ];
 
 const technologies = [
+ 
   {
     name: "HTML 5",
     icon: html,
@@ -166,8 +175,8 @@ const technologies = [
     icon: c,
   },
   {
-    name: "CPP",
-    icon: cpp,
+    name: "n8n Ai Agent",
+    icon: n8n,
   },
   {
     name: "JavaScript",
@@ -206,6 +215,10 @@ const technologies = [
     name: "git",
     icon: git,
   },
+   {
+name:"devOps",
+icon: devops,
+  },
   {
     name: "figma",
     icon: figma,
@@ -233,20 +246,21 @@ const technologies = [
     icon: npm,
   },
   {
-    name: "vue",
-    icon: vue,
+    name: "linux",
+    icon: linux,
   },
 ];
 
 const experiences = [
   {
     title: "Full-Stack Developer",
-    company_name: "NeoDocto",
-    icon: NeoDocto,
+    company_name: "wyreflow technologies",
+    icon: wyreflow,
     iconBg: "#E6DEDD",
-    date: "Jan 2024 - Feb 2024",
+    date: "June 2025 - Present",
     points: [
-       "Developing and maintaining web applications using React.js and other related technologies.",
+       "Developing and maintaining web applications using Mern Stack & devOps technologies.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
@@ -284,23 +298,24 @@ const testimonials = [
 const imageProjects = [
   {
     id: 1,
-    image: front,
-    url: "https://madamcoon.com/",
-    title: "Coding Test Platfrom",
+    image: crtdhome,
+    url: "https://crtd.in/",
+    title: "CRTD Technologies",
+    
     description: "",
   },
   {
     id: 2,
-    image: codeswap,
-    url: "https://chiquechickshop.com/",
-    title: "Codeswap",
+    image:Jobs,
+    url: "https://crtd.in/",
+    title: "Crtd Technologies",
     description: "",
   },
   {
     id: 3,
-    image: simon,
-    url: "https://jj-tailortech.vercel.app/",
-    title: "Simon Game",
+    image: jobhunt,
+    url: "",
+    title: "Job Hunt",
     description: "",
   },
   
@@ -308,53 +323,55 @@ const imageProjects = [
 
 const projects = [
   {
-    name: "CodeNest",
+    name: "CRTD Technologies",
     description:
-      "Designed a coding platform for teachers to create contests and students to practice coding in a competitive environment. Developed a user-friendly interface with a code editor and Google OAuth.",
+      "CRTD Technologies is a global technology company based in Bhopal, India, that helps businesses navigate the digital age. They offer a range of services including application development, ITES, mobility, cloud, big data, machine learning, and AI. The company focuses on helping clients transform their businesses for the digital age and improve efficiency and productivity. ",
     tags: [
       {
-        name: "react",
+        name: "MERN stack",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "DevOps",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Mobility",
         color: "pink-text-gradient",
       },
     ],
-    image: codenest,
-    source_code_link: "https://github.com/ujjvalap",
-    liveUrl: "https://codenest-arww.onrender.com/",
+   image: crtd,
+  imgFit: "object-contain",
+ 
+  source_code_link: "https://github.com/wyreflowtechnologies/crtd_2025",
+  liveUrl: "https://crtd.in/",
   },
   {
-    name: "Simon-Game",
+    name: "Job Hunt",
     description:
-      "Simon Game is an electronic memory game where players repeat an increasing sequence of lights and sounds. It features four colored buttons (red, blue, green, yellow), each with a unique sound.",
+      "JobHunt is a comprehensive job portal platform where recruiters can post job openings and students can apply directly using an integrated system. It features a built-in resume builder, allowing students to create professional resumes with ease. Additionally, the platform includes an ATS (Applicant Tracking System) tracker, enabling users to monitor their application status in real-time.",
     tags: [
       {
-        name: "HTML",
+        name: "MERN stack",
         color: "blue-text-gradient",
       },
       {
-        name: "CSS",
+        name: "web soket",
         color: "green-text-gradient",
       },
       {
-        name: "Javascript",
+        name: "persist",
         color: "pink-text-gradient",
       },
     ],
-    image: simon,
-    sourceCodeLink: "https://github.com/ujjvalap",
-    liveUrl: "https://simon-game-tau-sooty.vercel.app/"
+    image: jobhunt,
+    sourceCodeLink: "https://github.com/amarjeetvr/Job-Hunt",
+    liveUrl: "https://github.com/amarjeetvr/Job-Hunt"
   },
   {
-    name: "CodeSwap",
+    name: "Farmer system",
     description:
-      "CodeSwap is a collaborative coding platform for sharing and editing code snippets in real time. It supports multiple languages, version control, and live collaboration.",
+      " AgroConnect is a farmer-focused platform that provides detailed crop information, helping farmers make informed decisions based on soil, weather, and crop type. It also enables farmers to sell their products directly to buyers through a digital marketplace, improving their reach and earnings without middlemen.",
     tags: [
       {
         name: "React",
@@ -369,8 +386,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: codeswap,
-    sourceCodeLink: "https://github.com/ujjvalap",
+    image: farmer,
+    imgFit: "object-contain",
+  imgHeight: "h-24",
+  imgWidth: "w-auto",
+    sourceCodeLink: "https://github.com/amarjeetvr/Farmer-Platform",
+        liveUrl: "https://github.com/amarjeetvr/Farmer-Platform"
+
   },
   
 ];

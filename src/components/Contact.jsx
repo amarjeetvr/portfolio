@@ -8,6 +8,8 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { MdEmail } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Contact = () => {
@@ -30,45 +32,39 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setLoading(true);
 
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        
-        {
-          name: form.name,
-          to_name: "Ujjval Pateliya",
-          email: form.email,
-          to_email: "ujjvalpateliya@gmail.com",
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-        
-      )
-      
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+  const formData = new FormData();
+  formData.append("access_key", "352f57ba-ec46-4e42-b7e3-0a6ae3aa9e34");
+  formData.append("name", form.name);
+  formData.append("email", form.email);
+  formData.append("message", form.message);
+  formData.append("subject", "New Message from Portfolio");
+  formData.append("from_name", form.name);
 
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
+  try {
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
 
-          alert("Ahh, something went wrong. Please try again.");
-        }
-      );
-  };
+    if (res.ok) {
+      toast.success("Message sent successfully!");
+      setForm({ name: "", email: "", message: "" });
+    } else {
+      toast.error("Failed to send message. Please try again.");
+    }
+  } catch (error) {
+    toast.error("Error: " + error.message);
+  }
+
+  setLoading(false);
+};
+
+
+
   // Debuge the env file 
 //   console.log("Service ID:", import.meta.env.VITE_APP_EMAILJS_SERVICE_ID);
 //   console.log("Template ID:", import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID);
@@ -77,6 +73,7 @@ const Contact = () => {
 
 
 return (
+  <>
   <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
     {/* Contact Form Section */}
     <motion.div
@@ -85,7 +82,7 @@ return (
     >
       <p className={styles.sectionSubText}>Get in touch</p>
       <h2 className={`${styles.sectionHeadText} animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black`}>
-        Contact.
+        Contact
       </h2>
 
       {/* Contact Info Section */}
@@ -93,23 +90,23 @@ return (
         <article className="flex items-center gap-3 p-3 bg-white rounded-lg shadow-md">
           <MdEmail className="text-2xl text-blue-600" />
           <a
-            href="mailto:ujjvalpateliya@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=av457508@gmail.com&su=Hiring%20Opportunity%20for%20Full-Stack%20Developer&body=Hi%20Amarjeet%2C%0A%0AWe%20came%20across%20your%20profile%20and%20are%20interested%20in%20discussing%20a%20potential%20opportunity%20with%20you.%0APlease%20let%20us%20know%20your%20availability%20for%20a%20quick%20call.%0A%0ABest%20regards%2C%0A[Your%20Company%20Name]"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 font-medium hover:underline"
           >
-            ujjvalpateliya@gmail.com
+            av457508@gmail.com
           </a>
         </article>
         <article className="flex items-center gap-3 p-3 bg-white rounded-lg shadow-md">
           <BsWhatsapp className="text-2xl text-green-500" />
           <a
-            href="https://api.whatsapp.com/send/?phone=918435423244&text&app_absent=0&lang=en"
+            href="https://api.whatsapp.com/send/?phone=918889354535&text&app_absent=0&lang=en"
             target="_blank"
             rel="noopener noreferrer"
             className="text-green-600 font-medium hover:underline"
           >
-            +91 84354 32444
+             8889364535
           </a>
         </article>
       </div>
@@ -155,11 +152,41 @@ return (
         </label>
 
         <button
-          type="submit"
-          className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
-        >
-          {loading ? "Sending..." : "Send"}
-        </button>
+  type="submit"
+  className={`relative inline-flex items-center justify-center px-8 py-3 
+    bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold 
+    rounded-2xl shadow-lg transition-transform transform hover:scale-105 
+    focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-400`}
+>
+  {loading ? (
+    <>
+      <svg
+        className="animate-spin h-5 w-5 mr-3 text-white"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <circle
+          className="opacity-25"
+          cx="12"
+          cy="12"
+          r="10"
+          stroke="currentColor"
+          strokeWidth="4"
+        ></circle>
+        <path
+          className="opacity-75"
+          fill="currentColor"
+          d="M4 12a8 8 0 018-8v8H4z"
+        ></path>
+      </svg>
+      Sending...
+    </>
+  ) : (
+    "Send Message"
+  )}
+</button>
+
       </form>
     </motion.div>
 
@@ -171,6 +198,18 @@ return (
       <EarthCanvas />
     </motion.div>
   </div>
+<ToastContainer
+  position="bottom-right"
+  autoClose={3000}
+  hideProgressBar={false}
+  newestOnTop={false}
+  closeOnClick
+  rtl={false}
+  pauseOnFocusLoss
+  draggable
+  pauseOnHover
+/>
+     </>
 );
 
 }
