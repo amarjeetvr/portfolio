@@ -10,26 +10,26 @@ import {
   BsTwitter,
   BsGithub,
   BsDiscord,
+    BsYoutube,
   BsInstagram,
   BsLinkedin,
   BsFacebook,
 } from "react-icons/bs";
 
 const Hero = () => {
-  const [text, count] = useTypewriter({
+  const [text] = useTypewriter({
     words: [
-      "MERN Developer",
-      "QA Specialist",
-      "TechInnovator & ProblemSolver",
-      "FitnessEnthusiast",
-      "GamingConnoisseur",
-      "EternalLearner & TechExplorer",
-      "CraftingElegantSolutions",
-      "InCodeWeTrust",
-      "PushingPixelsAndDeadlifts",
-      "FromJavaScriptToPython",
-      "BuildingTheWebOneLineAtATime",
-      
+     "MERN Stack Developer",
+  "DevOps & CI/CD Enthusiast",
+  "Tech Innovator & Problem Solver",
+  "Code + Fitness Driven",
+  "Gaming & Logic Lover",
+  "Always Exploring Tech",
+  "Elegant Full-Stack Builder",
+  "In Code We Trust",
+  "Pixels by Day, Lifts by Night",
+  "JS to Java — Fluent Thinker",
+  "Web Builder, Line by Line"
     ],
     loop: true,
     delaySpeed: 1000,
@@ -49,7 +49,7 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm{" "}
             <span className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black">
-              Ujjval <span className="hidden sm:inline">Pateliya</span>
+              Amarjeet <span className="hidden sm:inline">Verma</span>
             </span>
           </h1>
 
@@ -59,8 +59,8 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <TicoCanvas />
 
+      <TicoCanvas />
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
@@ -79,45 +79,32 @@ const Hero = () => {
       </div>
 
       <div className="absolute right-5 top-1/2 -translate-y-1/2 flex flex-col gap-5 items-center md:mt-10 mt-5 md:gap-12">
-        <Link target="_blank" to="https://linkedin.com/in/ujjval-pateliya-qwer2005">
-          <BsLinkedin
-            size={30}
-            className="icon hover:text-[#0e76a8] hover:translate-y-[-2px] hover:cursor-pointer transition-all ease-in duration-100"
-          />
+        <Link target="_blank" to="https://www.linkedin.com/in/amarjeet-verma-3725a4288/">
+          <BsLinkedin size={30} className="icon hover:text-[#0e76a8] hover:-translate-y-1 transition-all duration-100" />
         </Link>
 
-        <Link target="_blank" to="https://github.com/ujjvalap">
-          <BsGithub
-            size={30}
-            className="icon hover:text-[#494646] hover:translate-y-[-2px] hover:cursor-pointer transition-all ease-in duration-100"
-          />
+        <Link target="_blank" to="https://github.com/amarjeetvr">
+          <BsGithub size={30} className="icon hover:text-[#494646] hover:-translate-y-1 transition-all duration-100" />
         </Link>
 
-        <Link target="_blank" to="https://x.com/UjjvalPateliya">
-          <BsTwitter
-            size={30}
-            className="icon hover:text-[#1DA1F2] hover:translate-y-[-2px] hover:cursor-pointer transition-all ease-in duration-100"
-          />
+        <Link target="_blank" to="https://x.com/Amarjeet4575">
+          <BsTwitter size={30} className="icon hover:text-[#1DA1F2] hover:-translate-y-1 transition-all duration-100" />
         </Link>
 
-        <Link target="_blank" to="https://discord.com/channels/@me">
-          <BsDiscord
-            size={30}
-            className="icon hover:text-[#5865F2] hover:translate-y-[-2px] hover:cursor-pointer transition-all ease-in duration-100"
-          />
+
+   <Link target="_blank" to="https://www.youtube.com/@AMAR_888_YT">
+    <BsYoutube
+      size={30}
+      className="icon hover:text-[#FF0000] hover:-translate-y-1 transition-all duration-100"
+    />
+  </Link>
+
+        <Link target="_blank" to="https://www.instagram.com/the_amar._/">
+          <BsInstagram size={30} className="icon hover:text-[#E1306C] hover:-translate-y-1 transition-all duration-100" />
         </Link>
 
-        <Link target="_blank" to="https://www.instagram.com/ujjval_1701/">
-          <BsInstagram
-            size={30}
-            className="icon hover:text-[#E1306C] hover:translate-y-[-2px] hover:cursor-pointer transition-all ease-in duration-100"
-          />
-        </Link>
-        <Link target="_blank" to="https://www.facebook.com/ujjval.pateleya">
-          <BsFacebook
-            size={30}
-            className="icon hover:text-[#1877F2] hover:translate-y-[-2px] hover:cursor-pointer transition-all ease-in duration-100"
-          />
+        <Link target="_blank" to="https://www.facebook.com/amarjeet.verma.98229241">
+          <BsFacebook size={30} className="icon hover:text-[#1877F2] hover:-translate-y-1 transition-all duration-100" />
         </Link>
       </div>
     </section>

@@ -64,7 +64,7 @@ const ImageCarousel = () => {
       <h2
         className={`${styles.sectionHeadText} animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black`}
       >
-        Preview.
+        Preview
       </h2>
       <Slider {...settings}>
         {imageProjects.map((project) => (

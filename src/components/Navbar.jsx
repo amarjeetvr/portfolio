@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+import { HiOutlineBriefcase } from "react-icons/hi";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
-import resume from "/Ujjwal_Pateliya_Resume.pdf";
 import { LOGO2 } from "../assets";
 
 const Navbar = () => {
@@ -39,22 +38,19 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img
-            src={LOGO2}
-            alt="logo"
-            className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 object-contain mr-3 transition-all duration-300 ease-in-out"
-          />
+          
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            FullStack Developer | QA Specialist
+            Full Stack Developer | DevOps Engineer
           </p>
         </Link>
 
         {/* Desktop Nav */}
         <ul className="list-none hidden sm:flex flex-row items-center gap-10">
-          <a href={resume} download="Ujjval_Pateliya_Resume.pdf">
+          <a href="/amar%20resume%20(1).pdf" download="amar resume .pdf">
             <button
-              className={`${active === "resume" ? "abhishek" : "abhishek-btn"
-                } font-medium cursor-pointer border-[1px]`}
+              className={`${
+                active === "resume" ? "abhishek" : "abhishek-btn"
+              } font-medium cursor-pointer border-[1px]`}
               onClick={() => setActive("resume")}
             >
               <span className="flex items-center animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black">
@@ -73,8 +69,9 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${active === nav.title ? "text-white" : "text-secondary"
-                } hover:text-white text-[18px] font-medium cursor-pointer`}
+              className={`${
+                active === nav.title ? "text-white" : "text-secondary"
+              } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -92,14 +89,16 @@ const Navbar = () => {
           />
 
           <div
-            className={`${!toggle ? "hidden" : "flex"
-              } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[160px] z-10 rounded-xl`}
+            className={`${
+              !toggle ? "hidden" : "flex"
+            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[160px] z-10 rounded-xl`}
           >
             <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
-              <a href={resume} download="Ujjval_Pateliya_Resume.pdf">
+              <a href="/amar%20resume%20(1).pdf" download="amar resume (1).pdf">
                 <button
-                  className={`${active === "resume" ? "abhishek" : "abhishek-btn"
-                    } font-medium cursor-pointer border-[1px]`}
+                  className={`${
+                    active === "resume" ? "abhishek" : "abhishek-btn"
+                  } font-medium cursor-pointer border-[1px]`}
                   onClick={() => {
                     setActive("resume");
                     setToggle(false);
@@ -121,8 +120,9 @@ const Navbar = () => {
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-secondary"
-                    }`}
+                  className={`font-medium cursor-pointer text-[16px] ${
+                    active === nav.title ? "text-white" : "text-secondary"
+                  }`}
                   onClick={() => {
                     setActive(nav.title);
                     setToggle(false);

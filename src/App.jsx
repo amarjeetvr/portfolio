@@ -12,8 +12,10 @@ import {
   StarsCanvas,
   Footer,
   Profile,
-  Education
+  Education,
+
 } from "./components";
+import Certificate from "./components/certificate";
 
 const App = () => {
   return (
@@ -31,7 +33,8 @@ const App = () => {
           <Tech />
           <Works />
           <Profile />
-          <Feedbacks />
+          <Feedbacks  />
+         <Certificate/>
           <Contact />
           <Footer />
         </div>
