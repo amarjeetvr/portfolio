@@ -77,7 +77,7 @@ const educations = [
     branch:
       "Computer Science & Engineering",
     marks:
-      "CGPA : 6.30 / 10",
+      "CGPA : 6.80 / 10",
     name: "Sagar Institute Of Science Technology & Engineering Bhopal ",
     year: "(2022 - 2026)",
     image: clg,
