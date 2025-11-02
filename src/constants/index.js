@@ -1,5 +1,7 @@
 import devops from "../assets//devops.png";
 import wyreflow from "../assets/wyreflow.jpg";
+import deepiotics from "../assets/deepiotics.jpeg";
+import integra from "../assets/integra.jpeg";
 import n8n from"../assets/n8n.png";
 import linux from "../assets/linux.png";
 import crtd from "../assets/crtd tech.png";
@@ -7,6 +9,7 @@ import farmer from "../assets/farmer.jpg";
 import jobhunt from "../assets/jobhunt.png";
 import crtdhome from "../assets/crtdHome.png";
 import Jobs from "../assets/Freshers-Jobs-Launch-Your-Tech-Section-Desktop.png";
+import coffee from "../assets/coffee .png";
 
 import {
   mobile,
@@ -253,11 +256,12 @@ icon: devops,
 
 const experiences = [
   {
-    title: "Full-Stack Developer",
+    title: "Mern Stack Developer",
     company_name: "wyreflow technologies",
     icon: wyreflow,
     iconBg: "#E6DEDD",
-    date: "June 2025 - Present",
+    date: "June 2025 - August 2025",
+    months: "3 Months",
     points: [
        "Developing and maintaining web applications using Mern Stack & devOps technologies.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
@@ -266,6 +270,34 @@ const experiences = [
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
+  {
+  title: "Software Engineering",
+  company_name: "Deepiotics Pvt Ltd",
+  icon: deepiotics,
+  iconBg: "#E6DEDD",
+  date: "September 2025 - September 2025",
+  months: "3 Months",
+  points: [
+    "Worked as an n8n AI Agent developer, automating workflows and integrating AI capabilities.",
+    "Contributed to frontend development using modern JavaScript frameworks.",
+    "Collaborated with team members to enhance project performance and improve user experience."
+  ],
+},
+
+{
+  title: "Full Stack Developer",
+  company_name: "Integra Magna Pvt Ltd",
+  icon: integra,
+  iconBg: "#E6DEDD",
+  date: "October 2024 - October 2025",
+  points: [
+    "Worked as a Full Stack Developer using Next.js and Payload CMS.",
+    "Developed and maintained the White-Mantis project — an e-commerce website connecting warehouses, shops, customers, and delivery agents.",
+    "Implemented secure APIs, product management features, and authentication workflows.",
+    "Collaborated with designers and backend teams to deliver responsive and scalable UI components.",
+  ],
+},
+
  
 ];
 
@@ -311,6 +343,13 @@ const imageProjects = [
     title: "Crtd Technologies",
     description: "",
   },
+   {
+    id : 4,
+    image: coffee,
+    url: "https://white-mantis.vercel.app/",
+    title: "White Mantis E-commerce",
+    description: "",
+  },
   {
     id: 3,
     image: jobhunt,
@@ -318,6 +357,7 @@ const imageProjects = [
     title: "Job Hunt",
     description: "",
   },
+ 
   
 ];
 
@@ -346,6 +386,31 @@ const projects = [
   source_code_link: "https://github.com/wyreflowtechnologies/crtd_2025",
   liveUrl: "https://crtd.in/",
   },
+
+    {
+    name: "White Mantis ",
+    description:
+      "White-Mantis is a modern e-commerce web application designed to connect warehouses, shops, customers, and delivery agents on a single platform — similar to how Zomato connects restaurants and delivery partners. The platform allows shops to list products directly from warehouses, enabling fast order processing and smooth delivery tracking. Delivery agents receive real-time order assignments, ensuring efficient logistics and customer satisfaction.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Payload CMS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Vercel",
+        color: "pink-text-gradient",
+      },
+    ],
+   image: coffee,
+  imgFit: "object-contain",
+ 
+  source_code_link: "https://github.com/amarjeetvr/White-Mantis.git",
+  liveUrl: "https://white-mantis.vercel.app/",
+  },
   {
     name: "Job Hunt",
     description:
@@ -368,6 +433,7 @@ const projects = [
     sourceCodeLink: "https://github.com/amarjeetvr/Job-Hunt",
     liveUrl: "https://github.com/amarjeetvr/Job-Hunt"
   },
+
   {
     name: "Farmer system",
     description:

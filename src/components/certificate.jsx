@@ -4,6 +4,7 @@ import google from "../assets/google.jpg";
 import cyber from "../assets/cyber secrituy.jpg";
 import pyton from "../assets/pyton 2.jpg";
 import ccn from "../assets/ccn 3.jpg";
+import LOR from "../assets/LOR.jpg";
 
 const certificates = [
   {
@@ -12,6 +13,7 @@ const certificates = [
     year: "2024",
     image: google,
   },
+  
   {
     title: "Introduction to CyberSecurity",
     issuer: "CISCO Networking Academy",
@@ -29,6 +31,12 @@ const certificates = [
     issuer: "CISCO Networking Academy",
     year: "2025",
     image: ccn,
+  },
+  {
+    title:"letter of recommendation",
+    issuer: "Wyreflow Technologies",
+    year: "2025",
+    image: LOR,
   },
 ];
 
