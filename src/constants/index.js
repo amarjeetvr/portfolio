@@ -271,25 +271,12 @@ const experiences = [
     ],
   },
   {
-  title: "Software Engineering",
-  company_name: "Deepiotics Pvt Ltd",
-  icon: deepiotics,
-  iconBg: "#E6DEDD",
-  date: "September 2025 - September 2025",
-  months: "3 Months",
-  points: [
-    "Worked as an n8n AI Agent developer, automating workflows and integrating AI capabilities.",
-    "Contributed to frontend development using modern JavaScript frameworks.",
-    "Collaborated with team members to enhance project performance and improve user experience."
-  ],
-},
-
-{
   title: "Full Stack Developer",
   company_name: "Integra Magna Pvt Ltd",
   icon: integra,
   iconBg: "#E6DEDD",
-  date: "October 2024 - October 2025",
+  date: "September 2025 - October 2025",
+   months: "2 Months",
   points: [
     "Worked as a Full Stack Developer using Next.js and Payload CMS.",
     "Developed and maintained the White-Mantis project — an e-commerce website connecting warehouses, shops, customers, and delivery agents.",
@@ -297,6 +284,20 @@ const experiences = [
     "Collaborated with designers and backend teams to deliver responsive and scalable UI components.",
   ],
 },
+
+  {
+  title: "Software Engineering",
+  company_name: "Deepiotics Pvt Ltd",
+  icon: deepiotics,
+  iconBg: "#E6DEDD",
+  date: "november 2025 - Present",
+  points: [
+    "Worked as an n8n AI Agent developer, automating workflows and integrating AI capabilities.",
+    "Contributed to frontend development using modern JavaScript frameworks.",
+    "Collaborated with team members to enhance project performance and improve user experience."
+  ],
+},
+
 
  
 ];
