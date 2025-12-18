@@ -1,0 +1,28 @@
+name: Daily Auto Commit
+
+on:
+  schedule:
+    - cron: '30 2 * * *'   # Runs daily at 08:00 AM IST
+  workflow_dispatch:
+
+jobs:
+  auto-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update daily log
+        run: echo "Auto commit on $(date)" >> daily-log.txt
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add daily-log.txt
+          git commit -m "chore: daily automated commit" || echo "No changes"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.8.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
