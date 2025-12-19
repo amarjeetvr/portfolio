@@ -5,7 +5,7 @@ permissions:
 
 on:
   schedule:
-    - cron: '30 2 * * *'   # Runs daily at 08:00 AM IST
+    - cron: '0 4 * * *'   # 09:30 AM IST (safe UTC window)
   workflow_dispatch:
 
 jobs:
@@ -20,8 +20,8 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          git config user.name "amarjeetvr"
+          git config user.email "av457508@gmail.com"
           git add daily-log.txt
           git commit -m "chore: daily automated commit" || echo "No changes"
 
