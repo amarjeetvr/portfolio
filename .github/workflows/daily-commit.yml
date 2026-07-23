@@ -5,7 +5,7 @@ permissions:
 
 on:
   schedule:
-    - cron: '0 4 * * *'   # 09:30 AM IST (safe UTC window)
+    - cron: '0 4 */3 * *'   # Every 3 days at 04:00 UTC (~09:30 IST)
   workflow_dispatch:
 
 jobs:
@@ -23,7 +23,7 @@ jobs:
           git config user.name "amarjeetvr"
           git config user.email "av457508@gmail.com"
           git add daily-log.txt
-          git commit -m "chore: daily automated commit" || echo "No changes"
+          git commit -m "chore: automated commit" || echo "No changes"
 
       - name: Push changes
         uses: ad-m/github-push-action@v0.8.0
